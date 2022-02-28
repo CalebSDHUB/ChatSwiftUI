@@ -11,6 +11,10 @@
 		3C9191D227CCD08F00461ADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9191D127CCD08F00461ADB /* ContentView.swift */; };
 		3C9191D427CCD09000461ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9191D327CCD09000461ADB /* Assets.xcassets */; };
 		3C9191D727CCD09000461ADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9191D627CCD09000461ADB /* Preview Assets.xcassets */; };
+		3C9191E627CCD35A00461ADB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9191E527CCD35A00461ADB /* LoginView.swift */; };
+		3C9191EA27CCD36700461ADB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9191E927CCD36700461ADB /* RegistrationView.swift */; };
+		3C9191ED27CCE5D900461ADB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9191EC27CCE5D900461ADB /* Extension.swift */; };
+		3C9191F027CCEF0900461ADB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9191EF27CCEF0900461ADB /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		3C9191D327CCD09000461ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C9191D627CCD09000461ADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C9191D827CCD09000461ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9191E527CCD35A00461ADB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3C9191E927CCD36700461ADB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		3C9191EC27CCE5D900461ADB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3C9191EF27CCEF0900461ADB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		3C9191E027CCD10900461ADB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C9191E427CCD34900461ADB /* Authentication */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,8 +114,19 @@
 		3C9191E327CCD10A00461ADB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3C9191EC27CCE5D900461ADB /* Extension.swift */,
+				3C9191EF27CCEF0900461ADB /* CustomTextField.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3C9191E427CCD34900461ADB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3C9191E527CCD35A00461ADB /* LoginView.swift */,
+				3C9191E927CCD36700461ADB /* RegistrationView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9191ED27CCE5D900461ADB /* Extension.swift in Sources */,
+				3C9191E627CCD35A00461ADB /* LoginView.swift in Sources */,
+				3C9191F027CCEF0900461ADB /* CustomTextField.swift in Sources */,
 				3C9191D227CCD08F00461ADB /* ContentView.swift in Sources */,
 				3C9191D027CCD08F00461ADB /* ChatSwiftUIApp.swift in Sources */,
+				3C9191EA27CCD36700461ADB /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
