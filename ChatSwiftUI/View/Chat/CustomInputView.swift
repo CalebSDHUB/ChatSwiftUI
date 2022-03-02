@@ -21,8 +21,8 @@ struct CustomInputView: View {
             
             HStack {
                 TextField("Message...", text: $text)
-//                    .textFieldStyle(PlainTextFieldStyle()) // Kills the app
-                    .body
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .font(.body)
                     .frame(minHeight: 30)
             }
             
