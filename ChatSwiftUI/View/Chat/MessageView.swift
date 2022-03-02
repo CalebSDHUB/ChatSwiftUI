@@ -24,7 +24,7 @@ struct MessageView: View {
                     .clipShape(ChatBubble(isFromCurrentUser: true))
                     .foregroundColor(.white)
                     .padding(.leading, 100)
-                    .padding(.horizontal)
+                    .padding(.horizontal, 30)
                 
             } else {
                 HStack(alignment: .bottom) {
@@ -41,7 +41,7 @@ struct MessageView: View {
                         .clipShape(ChatBubble(isFromCurrentUser: false))
                         .foregroundColor(.black)
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, 30)
                 .padding(.trailing, 80)
                 
                 Spacer()

@@ -25,6 +25,7 @@ struct CustomInputView: View {
                     .font(.body)
                     .frame(minHeight: 30)
             }
+            .padding(.leading)
             
             Button(action: action,
             label: {
