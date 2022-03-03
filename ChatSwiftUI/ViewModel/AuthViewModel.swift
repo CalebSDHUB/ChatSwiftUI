@@ -74,4 +74,14 @@ class AuthViewModel: NSObject, ObservableObject {
         try? Auth.auth().signOut() // Server-side
         userSession = Auth.auth().currentUser // Client-side is sync by the server-side instance
     }
+    
+    func fetchUser() {
+        guard let uid = userSession?.uid else { return }
+        
+        Firestore.firestore().collection(Constant.Firestore.USER_FOLDER).document(uid).getDocument { (snapshot, error) in
+            if let error = error {
+                print("ERROR: Failed fetching data from Firestore: \(error.localizedDescription)")
+            }
+        }
+    }
 }
