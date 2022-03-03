@@ -42,6 +42,9 @@
 		3C91925127CFA51100461ADB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3C91925027CFA51100461ADB /* FirebaseAuth */; };
 		3C91925327CFA51100461ADB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3C91925227CFA51100461ADB /* FirebaseFirestore */; };
 		3C91925627D0008900461ADB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91925527D0008900461ADB /* AuthViewModel.swift */; };
+		3C91925D27D0090400461ADB /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91925C27D0090400461ADB /* ProfilePhotoSelectorView.swift */; };
+		3C91926027D0257E00461ADB /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91925F27D0257D00461ADB /* ImageUploader.swift */; };
+		3C91926327D03B1200461ADB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91926227D03B1200461ADB /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		3C91923F27CEAF4100461ADB /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		3C91924827CFA28F00461ADB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C91925527D0008900461ADB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		3C91925C27D0090400461ADB /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		3C91925F27D0257D00461ADB /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		3C91926227D03B1200461ADB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				3C9191E227CCD10A00461ADB /* API */,
 				3C9191E327CCD10A00461ADB /* Util */,
 				3C9191CF27CCD08F00461ADB /* ChatSwiftUIApp.swift */,
+				3C91926227D03B1200461ADB /* Constant.swift */,
 				3C9191D127CCD08F00461ADB /* ContentView.swift */,
 				3C9191D327CCD09000461ADB /* Assets.xcassets */,
 				3C91924827CFA28F00461ADB /* GoogleService-Info.plist */,
@@ -172,6 +179,7 @@
 		3C9191E227CCD10A00461ADB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3C91925F27D0257D00461ADB /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			children = (
 				3C9191E527CCD35A00461ADB /* LoginView.swift */,
 				3C9191E927CCD36700461ADB /* RegistrationView.swift */,
+				3C91925C27D0090400461ADB /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -342,9 +351,12 @@
 				3C91923527CE838F00461ADB /* MessageView.swift in Sources */,
 				3C91920E27CE061E00461ADB /* SettingsCell.swift in Sources */,
 				3C91920027CD8B8800461ADB /* SettingView.swift in Sources */,
+				3C91926027D0257E00461ADB /* ImageUploader.swift in Sources */,
 				3C9191F027CCEF0900461ADB /* CustomTextField.swift in Sources */,
+				3C91926327D03B1200461ADB /* Constant.swift in Sources */,
 				3C9191D227CCD08F00461ADB /* ContentView.swift in Sources */,
 				3C9191F427CD895E00461ADB /* MainTabView.swift in Sources */,
+				3C91925D27D0090400461ADB /* ProfilePhotoSelectorView.swift in Sources */,
 				3C91923827CE89DB00461ADB /* CustomInputView.swift in Sources */,
 				3C91921527CE2A9100461ADB /* EditProfileView.swift in Sources */,
 				3C91920B27CE04C000461ADB /* SettingHeaderView.swift in Sources */,

@@ -16,10 +16,16 @@ struct RegistrationView: View {
     @State private var fullname = ""
     @State private var username = ""
     
-    @ObservedObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack {
+            
+            NavigationLink(
+                destination: ProfilePhotoSelectorView(),
+                isActive: $viewModel.didAuthenticateUser,
+                label: {})
+            
             VStack(alignment: .leading, spacing: 20) {
                 
                 HStack { Spacer() }
