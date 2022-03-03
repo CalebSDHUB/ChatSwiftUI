@@ -17,8 +17,8 @@ struct ChatSwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
-                .environmentObject(AuthViewModel())
+            ContentView()
+                .environmentObject(AuthViewModel.shared)
         }
     }
 }

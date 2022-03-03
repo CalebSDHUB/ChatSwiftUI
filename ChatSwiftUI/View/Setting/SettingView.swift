@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingView: View {
+    
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
         
         ZStack {
@@ -29,7 +32,7 @@ struct SettingView: View {
                 }
                 
                 Button(action: {
-                    
+                    authViewModel.signout()
                 }, label: {
                     Text("Log Out")
                         .foregroundColor(.red)

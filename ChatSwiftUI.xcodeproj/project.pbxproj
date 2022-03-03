@@ -126,7 +126,6 @@
 				3C9191E227CCD10A00461ADB /* API */,
 				3C9191E327CCD10A00461ADB /* Util */,
 				3C9191CF27CCD08F00461ADB /* ChatSwiftUIApp.swift */,
-				3C91926227D03B1200461ADB /* Constant.swift */,
 				3C9191D127CCD08F00461ADB /* ContentView.swift */,
 				3C9191D327CCD09000461ADB /* Assets.xcassets */,
 				3C91924827CFA28F00461ADB /* GoogleService-Info.plist */,
@@ -187,6 +186,7 @@
 		3C9191E327CCD10A00461ADB /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				3C91926227D03B1200461ADB /* Constant.swift */,
 				3C9191EC27CCE5D900461ADB /* Extensions.swift */,
 				3C9191EF27CCEF0900461ADB /* CustomTextField.swift */,
 				3C91922027CE423E00461ADB /* ImagePicker.swift */,

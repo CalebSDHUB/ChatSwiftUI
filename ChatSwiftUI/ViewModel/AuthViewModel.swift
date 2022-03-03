@@ -12,11 +12,27 @@ import Foundation
 class AuthViewModel: NSObject, ObservableObject {
     
     @Published var didAuthenticateUser = false
+    @Published var userSession: FirebaseAuth.User?
     
     private var tempCurrentUser: FirebaseAuth.User?
     
-    func login() {
+    static let shared = AuthViewModel()
+    
+    private override init() {
         print("Log in user from view model...")
+        userSession = Auth.auth().currentUser
+    }
+    
+    func login(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] (result, error) in
+            if let error = error {
+                print("ERROR: Failed sign in with error '\(error.localizedDescription)'")
+                return
+            }
+            
+            self?.userSession = result?.user
+            print("DEBUG: Successfully logged in...")
+        }
     }
     
     func register(withEmail email: String, password: String, fullname: String, username: String) {
@@ -55,6 +71,7 @@ class AuthViewModel: NSObject, ObservableObject {
     }
     
     func signout() {
-        
+        try? Auth.auth().signOut() // Server-side
+        userSession = Auth.auth().currentUser // Client-side is sync by the server-side instance
     }
 }
